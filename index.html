@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio professionnel de MOUANDZA Handy Christopher, étudiant en 3ème année d'Informatique (IT) à l'AUCA et futur ingénieur logiciel.">
+  <meta name="author" content="MOUANDZA Handy Christopher">
+  <title>MOUANDZA Handy Christopher | Étudiant IT & Ingénieur Logiciel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header" id="navbar">
+    <nav class="nav container">
+      <a class="logo" href="#home">HC<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Accueil</a>
+        <a href="#about" class="nav-link">À propos</a>
+        <a href="#skills" class="nav-link">Compétences</a>
+        <a href="#projects" class="nav-link">Projets</a>
+        <a href="#education" class="nav-link">Parcours</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="CV_Handy_Christopher.html" class="btn nav-btn" target="_blank">Mon CV</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="status-dot"></span> Recherche de Stage & Opportunités
+          </div>
+          <h1>Bonjour, je suis <span class="highlight">Handy Christopher</span>.</h1>
+          <p class="hero-text">
+            Étudiant passionné en 3<sup>ème</sup> année d'Informatique (IT) à l'AUCA (Kigali). Je développe des applications web robustes, des architectures orientées objet et des bases de données performantes.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">Découvrir mes projets</a>
+            <a class="btn secondary" href="CV_Handy_Christopher.html" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              Consulter mon CV
+            </a>
+          </div>
+          <div class="quick-contacts">
+            <a href="mailto:mouandzahandy16@gmail.com" title="Envoyer un email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              mouandzahandy16@gmail.com
+            </a>
+            <a href="tel:+250798974808" title="Appeler">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              +250 798 974 808
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-card glass">
+          <div class="avatar">HC</div>
+          <h2>MOUANDZA Handy Christopher</h2>
+          <p class="role">3<sup>ème</sup> Année IT • AUCA Kigali</p>
+          <div class="location-badge">📍 Kigali, Rwanda</div>
+          <div class="mini-stats">
+            <div><strong>3<sup>ème</sup></strong><small>Année</small></div>
+            <div><strong>IT</strong><small>Domaine</small></div>
+            <div><strong>Génie Log.</strong><small>Objectif</small></div>
+          </div>
+          <div class="social-links-card">
+            <a href="https://github.com/mouandzahandy16" target="_blank" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/christopher-mouandza-48b52a313/" target="_blank" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="mailto:mouandzahandy16@gmail.com" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <p class="eyebrow">À propos de moi</p>
+        <h2>Transformer les idées en solutions informatiques fiables.</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Actuellement étudiant en 3<sup>ème</sup> année de Licence en Informatique (Information Technology) à l'<strong>Adventist University of Central Africa (AUCA)</strong> à Kigali, je suis passionné par la conception logicielle, le développement d'APIs et la gestion de bases de données.
+            </p>
+            <p>
+              Mon objectif est de concevoir des applications web et logicielles efficaces, évolutives et axées sur l'expérience utilisateur. Organisé, rigoureux et bilingue (Français & Anglais), je suis constamment en quête d'apprentissage de nouvelles technologies et de bonnes pratiques de développement.
+            </p>
+          </div>
+          <div class="info-list glass">
+            <div class="info-item">
+              <span class="info-label">Nom complet :</span>
+              <span class="info-value">MOUANDZA Handy Christopher</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">N° Étudiant :</span>
+              <span class="info-value">27284</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Université :</span>
+              <span class="info-value">AUCA (Kigali, Rwanda)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Langues :</span>
+              <span class="info-value">Français (Courant), Anglais (Courant)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Disponibilité :</span>
+              <span class="info-value">Stage & Projets Académiques / Pro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <p class="eyebrow">Compétences</p>
+        <h2>Technologies & Savoir-faire</h2>
+        <div class="skills-grid">
+          <div class="skill-card glass">
+            <div class="skill-icon">💻</div>
+            <h3>Programmation</h3>
+            <p>Java, C, JavaScript (ES6+), PHP</p>
+          </div>
+          <div class="skill-card glass">
+            <div class="skill-icon">🌐</div>
+            <h3>Développement Web</h3>
+            <p>HTML5, CSS3, Responsive Design, Flexbox, CSS Grid</p>
+          </div>
+          <div class="skill-card glass">
+            <div class="skill-icon">⚙️</div>
+            <h3>Backend & Frameworks</h3>
+            <p>Spring Boot, REST APIs, Architecture MVC, Maven</p>
+          </div>
+          <div class="skill-card glass">
+            <div class="skill-icon">🗄️</div>
+            <h3>Bases de Données</h3>
+            <p>MySQL, PostgreSQL, Oracle SQL / PLSQL, H2 Database</p>
+          </div>
+          <div class="skill-card glass">
+            <div class="skill-icon">🛠️</div>
+            <h3>Outils & Environnements</h3>
+            <p>Git, GitHub, VS Code, IntelliJ IDEA, Postman</p>
+          </div>
+          <div class="skill-card glass">
+            <div class="skill-icon">🧠</div>
+            <h3>Conception & Concepts</h3>
+            <p>POO, CRUD, JDBC, Modélisation SQL, REST API Architecture</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="eyebrow">Projets académiques</p>
+        <h2>Réalisations & Projets d'études</h2>
+        <div class="project-grid">
+          
+          <article class="project-card glass">
+            <div class="project-header">
+              <span class="tag badge-featured">Projet Phare</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3>Campus Queue Management System</h3>
+            <p>
+              Système web de gestion de files d'attente virtuelles pour les services universitaires (Finance, Inscription, Bibliothèque). Permet aux étudiants d'obtenir un ticket numérique et d'en suivre la progression en temps réel, évitant l'encombrement physique.
+            </p>
+            <div class="tech-stack">
+              <span>HTML5/CSS3</span>
+              <span>JavaScript</span>
+              <span>Java / Spring Boot</span>
+              <span>MySQL</span>
+              <span>Maven</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/mouandzahandy16" target="_blank" class="project-link">Code source sur GitHub &rarr;</a>
+            </div>
+          </article>
+
+          <article class="project-card glass">
+            <div class="project-header">
+              <span class="tag">Base de données</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3>Pharmacy Stock Management System</h3>
+            <p>
+              Solution complète de gestion de stock en pharmacie avec gestion des fournisseurs, médicaments, ventes, alertes de péremption et seuils de réapprovisionnement automatique.
+            </p>
+            <div class="tech-stack">
+              <span>Oracle SQL</span>
+              <span>PL/SQL</span>
+              <span>Modélisation Relational</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/mouandzahandy16" target="_blank" class="project-link">Voir le projet &rarr;</a>
+            </div>
+          </article>
+
+          <article class="project-card glass">
+            <div class="project-header">
+              <span class="tag">Backend API</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3>APIs de Gestion d'Étudiants & Livres</h3>
+            <p>
+              APIs RESTful développées avec Spring Boot pour effectuer des opérations CRUD complètes, avec gestion de la pagination, validation des données et persistance dans PostgreSQL/H2.
+            </p>
+            <div class="tech-stack">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>PostgreSQL</span>
+              <span>Postman</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/mouandzahandy16" target="_blank" class="project-link">Voir le projet &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section alt">
+      <div class="container">
+        <p class="eyebrow">Parcours académique</p>
+        <h2>Formation & Diplômes</h2>
+        <div class="timeline">
+          <div class="timeline-item glass">
+            <div class="timeline-badge">🎓</div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Adventist University of Central Africa (AUCA)</h3>
+                <span class="period">2023 - Présent (3<sup>ème</sup> Année)</span>
+              </div>
+              <p class="degree">Licence en Technologies de l'Information (Bachelor of Science in Information Technology)</p>
+              <p>
+                <strong>Cours clés :</strong> Programmation Orientée Objet (Java), Génie Logiciel, Conception & Administration de Bases de Données, Développement Web, Structures de Données, Réseaux Informatiques.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h2>Travaillons ensemble !</h2>
+        <p class="section-text">
+          Vous cherchez un développeur motivé pour un stage, un projet académique ou une opportunité professionnelle ? N'hésitez pas à me contacter.
+        </p>
+
+        <div class="contact-grid">
+          
+          <div class="contact-card glass" onclick="copyToClipboard('mouandzahandy16@gmail.com', 'Adresse e-mail copiée !')" title="Cliquer pour copier l'email">
+            <div class="contact-icon">✉️</div>
+            <h3>Email</h3>
+            <p>mouandzahandy16@gmail.com</p>
+            <span class="click-hint">Cliquer pour copier</span>
+          </div>
+
+          <div class="contact-card glass" onclick="copyToClipboard('+250798974808', 'Numéro de téléphone copié !')" title="Cliquer pour copier le téléphone">
+            <div class="contact-icon">📱</div>
+            <h3>Téléphone / WhatsApp</h3>
+            <p>+250 798 974 808</p>
+            <span class="click-hint">Cliquer pour copier</span>
+          </div>
+
+          <a href="https://github.com/mouandzahandy16" target="_blank" class="contact-card glass">
+            <div class="contact-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </div>
+            <h3>GitHub</h3>
+            <p>github.com/mouandzahandy16</p>
+            <span class="click-hint">Visiter le profil &rarr;</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/christopher-mouandza-48b52a313/" target="_blank" class="contact-card glass">
+            <div class="contact-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </div>
+            <h3>LinkedIn</h3>
+            <p>Christopher Mouandza</p>
+            <span class="click-hint">Visiter le profil &rarr;</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>© <span id="year">2026</span> MOUANDZA Handy Christopher. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="CV_Handy_Christopher.html" target="_blank">CV HTML</a>
+        <a href="https://github.com/mouandzahandy16" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/christopher-mouandza-48b52a313/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast -->
+  <div id="toast" class="toast">Information copiée !</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
