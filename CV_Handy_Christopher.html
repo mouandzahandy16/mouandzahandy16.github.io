@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae — MOUANDZA Handy Christopher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1e293b;
+      --accent: #4f46e5;
+      --sidebar-bg: #f1f5f9;
+      --main-bg: #ffffff;
+      --text-dark: #0f172a;
+      --text-body: #334155;
+      --text-muted: #64748b;
+      --border-color: #cbd5e1;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #e2e8f0;
+      color: var(--text-body);
+      line-height: 1.5;
+      padding: 30px 15px;
+    }
+
+    .action-bar {
+      max-width: 960px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .back-link {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .back-link:hover {
+      color: var(--accent);
+    }
+
+    .btn-print {
+      background: var(--accent);
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-print:hover {
+      background: #4338ca;
+    }
+
+    .cv-paper {
+      max-width: 960px;
+      margin: 0 auto;
+      background: var(--main-bg);
+      border-radius: 12px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+      display: grid;
+      grid-template-columns: 310px 1fr;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+    }
+
+    .cv-sidebar {
+      background-color: var(--sidebar-bg);
+      padding: 40px 30px;
+      border-right: 1px solid var(--border-color);
+    }
+
+    .name-block {
+      margin-bottom: 28px;
+    }
+
+    .name-block h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.15;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+    }
+
+    .name-block .role-title {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: 8px;
+      line-height: 1.35;
+    }
+
+    .side-section {
+      margin-bottom: 26px;
+    }
+
+    .side-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .side-title {
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--primary);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 4px;
+      margin-bottom: 12px;
+    }
+
+    .contact-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      font-size: 0.86rem;
+    }
+
+    .contact-list li {
+      word-break: break-word;
+    }
+
+    .contact-list a {
+      color: var(--text-body);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-list a:hover {
+      color: var(--accent);
+    }
+
+    .skill-group {
+      margin-bottom: 12px;
+    }
+
+    .skill-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-group strong {
+      display: block;
+      font-size: 0.82rem;
+      color: var(--text-dark);
+      margin-bottom: 2px;
+    }
+
+    .skill-group p {
+      font-size: 0.84rem;
+      color: var(--text-body);
+      line-height: 1.4;
+    }
+
+    .info-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 0.84rem;
+    }
+
+    .info-list span {
+      color: var(--text-muted);
+    }
+
+    .info-list strong {
+      color: var(--text-dark);
+    }
+
+    .cv-main {
+      padding: 40px 40px;
+    }
+
+    .main-section {
+      margin-bottom: 28px;
+    }
+
+    .main-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .main-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 5px;
+      margin-bottom: 14px;
+    }
+
+    .profile-text {
+      font-size: 0.92rem;
+      color: var(--text-body);
+      line-height: 1.6;
+    }
+
+    .edu-item {
+      margin-bottom: 12px;
+    }
+
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .edu-degree {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .edu-dates {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .edu-school {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .edu-courses {
+      font-size: 0.88rem;
+      color: var(--text-body);
+    }
+
+    .project-item {
+      margin-bottom: 20px;
+    }
+
+    .project-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+
+    .project-name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .project-tech {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent);
+      font-style: italic;
+    }
+
+    .project-bullets {
+      list-style-type: disc;
+      padding-left: 18px;
+      margin-top: 4px;
+    }
+
+    .project-bullets li {
+      font-size: 0.88rem;
+      color: var(--text-body);
+      margin-bottom: 4px;
+      line-height: 1.45;
+    }
+
+    .project-bullets li:last-child {
+      margin-bottom: 0;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+
+      .action-bar {
+        display: none;
+      }
+
+      .cv-paper {
+        box-shadow: none;
+        border: none;
+        max-width: 100%;
+        border-radius: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .cv-paper {
+        grid-template-columns: 1fr;
+      }
+
+      .cv-sidebar {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        padding: 30px 20px;
+      }
+
+      .cv-main {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="action-bar">
+    <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
+    <button class="btn-print" onclick="window.print()">
+      🖨️ Print / Save as PDF
+    </button>
+  </div>
+
+  <div class="cv-paper">
+    
+    <aside class="cv-sidebar">
+      <div class="name-block">
+        <h1>MOUANDZA<br>Handy Christopher</h1>
+        <div class="role-title">IT Student & Aspiring Software Engineer</div>
+      </div>
+
+      <div class="side-section">
+        <h2 class="side-title">Contact</h2>
+        <ul class="contact-list">
+          <li>📍 Kigali, Rwanda</li>
+          <li>📱 +250 798 974 808</li>
+          <li>✉️ <a href="mailto:mouandzahandy16@gmail.com">mouandzahandy16@gmail.com</a></li>
+          <li>💻 <a href="https://github.com/mouandzahandy16" target="_blank">github.com/mouandzahandy16</a></li>
+          <li>🔗 <a href="https://www.linkedin.com/in/christopher-mouandza-48b52a313/" target="_blank">LinkedIn Profile</a></li>
+        </ul>
+      </div>
+
+      <div class="side-section">
+        <h2 class="side-title">Technical Skills</h2>
+        
+        <div class="skill-group">
+          <strong>Languages</strong>
+          <p>Java, C, JavaScript, PHP, SQL</p>
+        </div>
+
+        <div class="skill-group">
+          <strong>Web Development</strong>
+          <p>HTML5, CSS3, Responsive Design, Flexbox, CSS Grid</p>
+        </div>
+
+        <div class="skill-group">
+          <strong>Backend & Frameworks</strong>
+          <p>Spring Boot, REST APIs, MVC Architecture, Maven</p>
+        </div>
+
+        <div class="skill-group">
+          <strong>Databases</strong>
+          <p>MySQL, PostgreSQL, Oracle SQL / PLSQL, H2</p>
+        </div>
+
+        <div class="skill-group">
+          <strong>Tools</strong>
+          <p>Git, GitHub, VS Code, IntelliJ IDEA, Postman</p>
+        </div>
+      </div>
+
+      <div class="side-section">
+        <h2 class="side-title">Additional Info</h2>
+        <ul class="info-list">
+          <li><span>Student ID:</span> <strong>27284</strong></li>
+          <li><span>Languages:</span> <strong>English, French</strong></li>
+          <li><span>Focus:</span> <strong>Software Engineering Internships & Entry-Level Roles</strong></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="cv-main">
+      
+      <section class="main-section">
+        <h2 class="main-title">Profile</h2>
+        <p class="profile-text">
+          Dedicated 3rd-year Information Technology student at Adventist University of Central Africa (AUCA) with a solid foundation in software engineering, Java programming, REST API development, and database systems. Motivated to build practical, scalable applications and solve real-world technical problems while growing into a professional software engineer.
+        </p>
+      </section>
+
+      <section class="main-section">
+        <h2 class="main-title">Education</h2>
+        <div class="edu-item">
+          <div class="edu-header">
+            <span class="edu-degree">Bachelor of Science in Information Technology</span>
+            <span class="edu-dates">2023 – Present (3rd Year, 2026)</span>
+          </div>
+          <div class="edu-school">Adventist University of Central Africa (AUCA), Kigali, Rwanda</div>
+          <div class="edu-courses">
+            <strong>Relevant Coursework:</strong> Object-Oriented Programming (Java), Database Systems & Design, Web Development, Software Engineering, RESTful APIs, Data Structures, System Administration.
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section">
+        <h2 class="main-title">Project Experience</h2>
+
+        <div class="project-item">
+          <div class="project-header">
+            <span class="project-name">Campus Queue Management System</span>
+            <span class="project-tech">Java, Spring Boot, HTML5/CSS3, JS, MySQL</span>
+          </div>
+          <ul class="project-bullets">
+            <li>Architected a web-based queue management application to eliminate physical waiting lines at university service offices (Finance, Registration, Library).</li>
+            <li>Implemented virtual ticket issuing and real-time waiting position tracking accessible from student mobile devices.</li>
+            <li>Built staff counter management interfaces for ticket calling, counter status controls, and service analytics.</li>
+          </ul>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <span class="project-name">Pharmacy Stock Management System</span>
+            <span class="project-tech">Oracle SQL, PL/SQL, Database Design</span>
+          </div>
+          <ul class="project-bullets">
+            <li>Designed a relational database model for managing medicines, suppliers, sales transactions, and user access levels.</li>
+            <li>Created PL/SQL routines for automated stock validation, minimum threshold alerts, and expiration control logic.</li>
+          </ul>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <span class="project-name">Student & Book Management REST APIs</span>
+            <span class="project-tech">Java, Spring Boot, PostgreSQL, Maven, Postman</span>
+          </div>
+          <ul class="project-bullets">
+            <li>Developed RESTful backend microservices providing full CRUD functionality for academic student and book records.</li>
+            <li>Configured database persistence using PostgreSQL and H2, result pagination, and thorough API endpoint testing via Postman.</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <section class="main-section">
+        <h2 class="main-title">Career Objective</h2>
+        <p class="profile-text">
+          To obtain a software engineering internship or junior developer position where I can apply my Java and database development skills, learn from senior engineering teams, and deliver reliable software solutions.
+        </p>
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
